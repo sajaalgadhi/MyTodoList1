@@ -4,7 +4,7 @@ body {
   font-family: 'Shadows Into Light', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   background-image: url("./thumb-1920-651074.jpg");
+   /* background-image: url("./thumb-1920-651074.jpg"); */
    background-size: cover;
    background-repeat:no-repeat; 
    background-attachment: fixed;
