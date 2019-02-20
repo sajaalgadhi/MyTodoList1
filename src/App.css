@@ -53,7 +53,7 @@ li{
 
 form{
    height:80%;
-  padding-left:36%;
+  /* padding-left:36%; */
   padding: 20px;
   
 }
@@ -170,7 +170,8 @@ outline: none;
        
  }
  form{
-   padding-left: 35%;
+   text-align: center;
+   /* padding-left: 35%; */
  }
   body{
     background-size: cover;
@@ -189,7 +190,7 @@ outline: none;
        
  }
  form{
-   padding-left: 0;
+   /* padding-left: 0; */
    padding-top: 40px;
  }
 
@@ -211,7 +212,7 @@ outline: none;
        
  }
  form{
-   padding-left: 1%;
+   /* padding-left: 1%; */
    padding-top: 10px;
  }
   body{
@@ -225,13 +226,13 @@ outline: none;
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   #star {
        display:inline-block;
        
  }
  form{
-   padding-left: 30%;
+   /* padding-left: 30%; */
    
   
  }

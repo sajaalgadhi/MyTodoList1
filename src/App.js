@@ -103,10 +103,11 @@ class App extends Component {
 
         <h1>My Todo List</h1>
 
-        <form onSubmit={this.submitfunction}>
+        <form onSubmit={this.submitfunction} >
 
           <input placeholder='what is your plan for today?' id='star' type='text' name='title' size='50' onChange={this.Formfunction} value={this.state.newtask.title} />
           <input className="mybutton" type='submit' value='New Task' />
+          \
         </form>
 
         <div className='two'>
