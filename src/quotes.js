@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import App from './App'
 class Quotes extends Component {
     render() {
 

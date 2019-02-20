@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 
 
 class Todo extends Component {
+
     state = {
         hide: 'false'
     }
+    //hide the task when user click on the task typed 
     finishtask = () => {
         if (this.state.hide === 'false') {
             this.setState({ hide: 'hidden' })

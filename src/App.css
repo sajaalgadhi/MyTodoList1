@@ -160,7 +160,9 @@ font-size: 25px;
    padding-left: 35%;
  }
   body{
- background-size: contain;
+    background-size: cover;
+   background-repeat:no-repeat; 
+   /* background-attachment: fixed; */
  }
  ul{
    font-size: 15px;
@@ -179,7 +181,9 @@ font-size: 25px;
  }
 
   body{
- background-size: contain;
+    background-size: cover;
+   background-repeat:no-repeat; 
+   /* background-attachment: fixed; */
  }
   ul{
    font-size: 15px;
@@ -198,7 +202,9 @@ font-size: 25px;
    padding-top: 10px;
  }
   body{
- background-size: contain;
+    background-size: cover;
+   background-repeat:no-repeat; 
+   /* background-attachment: fixed; */
  }
   ul{
    font-size: 40px;
@@ -217,7 +223,9 @@ font-size: 25px;
   
  }
   body{
- background-size: cover;
+   background-size: cover;
+   background-repeat:no-repeat; 
+   /* background-attachment: fixed; */
  }
    ul{
    font-size: 40px;

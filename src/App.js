@@ -13,12 +13,12 @@ class App extends Component {
     , quote: ''
     , qouteAuthr: ''
   }
-
+  //this function will submit user input 
   submitfunction = (event) => {
-    event.preventDefault();
-    const copy = this.state.tasks.slice(0);
-    copy.push(this.state.newtask);
-    this.setState({
+    event.preventDefault();//prevent auto reload of the page 
+    const copy = this.state.tasks.slice(0);//make copy of the tasks array 
+    copy.push(this.state.newtask);//push  the new input to the array 
+    this.setState({//update the copy with the new data of the array 
       tasks: copy,
       newtask: {
         title: ''
@@ -26,19 +26,19 @@ class App extends Component {
     })
 
   }
-
+  //this function will get the data user typed 
   Formfunction = (event) => {
-
+    //get data from the user 
     const newData = event.target.value;
-
+    //get the original state
     const originState = this.state.newtask;
-
+    //assign new data to the copy of the tasks array 
     var copy = Object.assign({}, originState);
-
+    //add new data from user to the copy 
     const key = event.target.name;
 
     copy[key] = newData;
-
+    //update the copy with the new data that user typed 
     this.setState({
       newtask: copy
     })
@@ -47,7 +47,7 @@ class App extends Component {
   }
   componentDidMount() {
 
-
+    //add API quotes to the page 
     axios({
       method: 'get',
       url: 'https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en'
@@ -67,7 +67,7 @@ class App extends Component {
 
       })
   }
-
+  //this function will remove each task indivisually by click button 
   removeTask = (index) => {
     //take a copy of the array and delete array content depends on index 
     const copytasks = this.state.tasks.splice(index, 1);
@@ -90,6 +90,7 @@ class App extends Component {
 
 
   render() {
+    //loop throug the tasks array 
     const TaskList = this.state.tasks.map((TaskData, index) => {
       return <Todo TaskData={TaskData} index={index} removeTask={this.removeTask} />
     });
@@ -112,6 +113,7 @@ class App extends Component {
           <ul >
             {TaskList}
           </ul>
+
           <Quotes qoute={this.state.quote} quoteAuther={this.state.qouteAuthr} />
         </div>
         <footer>Made with ♥️ By:Saja AlGadhi</footer>
