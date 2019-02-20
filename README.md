@@ -1,7 +1,7 @@
 
 
  # MY  TODO LIST 📝
- TODO List React App[Create React App]().<br>
+ TODO List React App<br>
 ![screenshot](./public/Mytodo2.png)
 
 
@@ -10,7 +10,7 @@
 React <br>
 CSS <br>
 JavaScript<br>
-Axios 
+AJAX<br>
 
 
 ## `Features:`🚀
