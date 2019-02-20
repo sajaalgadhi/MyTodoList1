@@ -2,7 +2,7 @@
 
  # MY  TODO LIST 📝
  TODO List React App[Create React App]().<br>
-![screenshot](/Users/sq/wdi-infinity/todo/public/Todo.jpg)
+![screenshot](./public/Todo.jpg)
 
 
 ## `Technology:` 💻
