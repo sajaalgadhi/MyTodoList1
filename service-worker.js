@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "//MyTodoList1/precache-manifest.5e6bd52cbfbca043de5c6508849194d2.js"
+  "/MyTodoList1/precache-manifest.4fb4ef871b91053bd34836fe6f241397.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("//MyTodoList1/index.html", {
+workbox.routing.registerNavigationRoute("/MyTodoList1/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
