@@ -117,13 +117,9 @@ class App extends Component {
 
           <Quotes qoute={this.state.quote} quoteAuther={this.state.qouteAuthr} />
         </div>
-        <footer>Made with ♥️ By:Saja AlGadhi</footer>
+        <footer>Made with <span role="img" aria-label="emoji">♥️ </span>By:Saja AlGadhi</footer>
 
       </div>
-
-
-
-
     );
   }
 }
