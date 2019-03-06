@@ -48,10 +48,7 @@ class App extends Component {
   componentDidMount() {
 
     //add API quotes to the page 
-    axios({
-      method: 'get',
-      url: 'https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en'
-    })
+    axios('https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en')
       .then((response) => {
         console.log(response.data.quoteText)
         console.log(response.data.quoteAuthor)
@@ -66,6 +63,7 @@ class App extends Component {
         console.log(error);
 
       })
+
   }
   //this function will remove each task indivisually by click button 
   removeTask = (index) => {
