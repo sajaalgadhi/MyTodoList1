@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
 import Todo from './todo';
-import axios from 'axios';
-import Quotes from './quotes';
+// import axios from 'axios';
+// import Quotes from './quotes';
 
 class App extends Component {
   state = {
     newtask: {
       title: ''
     },
-    tasks: []
-    , quote: ''
-    , qouteAuthr: ''
+    tasks: [],
+    // , quote: ''
+    // , qouteAuthr: ''
   }
   //this function will submit user input 
   submitfunction = (event) => {
@@ -45,26 +45,35 @@ class App extends Component {
 
 
   }
-  componentDidMount() {
+  // componentDidMount() {
 
-    //add API quotes to the page 
-    axios('https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en')
-      .then((response) => {
-        console.log(response.data.quoteText)
-        console.log(response.data.quoteAuthor)
-        this.setState({
-          quote: response.data.quoteText,
-          qouteAuthr: response.data.quoteAuthor,
+  //add API quotes to the page 
+  // fetch('https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en', {
+  //   method: "GET", // *GET, POST, PUT, DELETE, etc.
 
+  //   headers: {
+  //     'Access-Control-Allow-Origin': '*',
+  //     "Content-Type": "application/json",
+  //     // "Content-Type": "application/x-www-form-urlencoded",
+  //   }
+  // })
+  //   .then(function (myJson) {
+  //     console.log(myJson);
+  //   });
+  // .then((response) => {
+  //   console.log(response)
+  //   console.log(response)
+  //   this.setState({
+  //     quote: response.quoteText,
+  //     qouteAuthr: response.quoteAuthor,
+  //   })
+  // })
+  // .catch((error) => {
+  //   console.log(error);
 
-        })
-      })
-      .catch((error) => {
-        console.log(error);
+  // })
 
-      })
-
-  }
+  // }
   //this function will remove each task indivisually by click button 
   removeTask = (index) => {
     //take a copy of the array and delete array content depends on index 
@@ -92,10 +101,7 @@ class App extends Component {
     const TaskList = this.state.tasks.map((TaskData, index) => {
       return <Todo TaskData={TaskData} index={index} removeTask={this.removeTask} />
     });
-    console.log(this.state.qouteAuthr)
-    // const divStyle = {
-    //   backgroundImage: `url(${this.state.wallpaper})`,
-    // }style={divStyle}
+
     return (
       <div className='one'>
 
@@ -105,7 +111,7 @@ class App extends Component {
 
           <input placeholder='what is your plan for today?' id='star' type='text' name='title' size='50' onChange={this.Formfunction} value={this.state.newtask.title} />
           <input className="mybutton" type='submit' value='New Task' />
-          \
+
         </form>
 
         <div className='two'>
@@ -113,7 +119,7 @@ class App extends Component {
             {TaskList}
           </ul>
 
-          <Quotes qoute={this.state.quote} quoteAuther={this.state.qouteAuthr} />
+
         </div>
         <footer>Made with <span role="img" aria-label="emoji">♥️ </span>By:Saja AlGadhi</footer>
 

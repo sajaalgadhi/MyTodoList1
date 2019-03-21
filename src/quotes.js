@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-class Quotes extends Component {
-    render() {
+// import React, { Component } from 'react';
+// class Quotes extends Component {
+//     render() {
 
 
 
-        return (
-            <div id='quote'>
+//         return (
+//             <div id='quote'>
 
-                <p>“{this.props.qoute}”</p>
+//                 <p>“{this.props.qoute}”</p>
 
-                <p>{this.props.quoteAuther}</p>
+//                 <p>{this.props.quoteAuther}</p>
 
-            </div>
-
-
-        );
-    }
+//             </div>
 
 
-} export default Quotes
+//         );
+//     }
+
+
+// } export default Quotes
