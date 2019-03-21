@@ -27,4 +27,3 @@ New quote everyday.
 
 1. [W3Schools.com](www.w3schools.com)
 2. [stackoverflow.com](www.stackoverflow.com)
-3. And a special Thanks to my Instructors [@Micheal](https://github.com/micfin),[@Usman](https://github.com/usmanbashir),[@Ghadeer](https://github.com/ghadeer-x/), and My Dear friend [@Hala](https://github.com/hala-almaimoni) and [@Majd](https://github.com/glllory)
